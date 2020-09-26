@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/b_search_recipe_by_ing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск рецепта по ингредиенту"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="search_recipe_by_ing"
+        />
+
+    <Button
+        android:id="@+id/b_search_recipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поиск рецепта"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:onClick="search_recipe"
+        />
+
+</RelativeLayout>

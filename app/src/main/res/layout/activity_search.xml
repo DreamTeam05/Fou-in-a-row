@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search_recipe">
+
+<!--    <FrameLayout-->
+<!--        android:id="@+id/fragment_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_above="@+id/bottom_navigation" />-->
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottom_navigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:menu="@menu/bottom_navigation"/>-->
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_dish_text"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/dish"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:ems="15"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true"/>-->
+
+    <EditText
+        android:id="@+id/dish"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/b_search_rec"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/search_b1_text"-->
+<!--        android:layout_marginTop="110dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:onClick="searchRecipeInDataset"/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rec"
+        android:layout_marginTop="110dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/rec"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:inputType="text"-->
+<!--        android:layout_marginTop="180dp"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:background="white"/>-->
+
+</RelativeLayout>

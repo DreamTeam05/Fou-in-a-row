@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project</string>
+    <string name="favorites_text">Избранное:</string>
+<!--    <string name="welcome_text">Добро пожаловать</string>-->
+    <string name="search_b1_text">Поиск</string>
+    <string name="enter_dish_text">Введите блюдо:</string>
+    <string name="toHome_text">Домой</string>
+</resources>
