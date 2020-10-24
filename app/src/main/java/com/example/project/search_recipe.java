@@ -27,6 +27,7 @@ public class search_recipe extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference ref;
     private List<String> lst;
+    private List<String> lst11;
     private List<Recipe> rec;
     private ListView listRecipe;
     private ArrayAdapter<String> adapter;
@@ -66,6 +67,15 @@ public class search_recipe extends AppCompatActivity {
 
 
     private void init() {
+        listRecipe = findViewById(R.id.rec);
+        lst = new ArrayList<>();
+        rec = new ArrayList<>();
+        adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, lst);
+        database = FirebaseDatabase.getInstance();
+        ref = database.getReference("Рецепты");
+    }
+
+    private void dothis() {
         listRecipe = findViewById(R.id.rec);
         lst = new ArrayList<>();
         rec = new ArrayList<>();
@@ -123,6 +133,7 @@ public class search_recipe extends AppCompatActivity {
 //        getDataFromDB(dishstr);
 //        setOnClickItem();
 //    }
+
 
 //    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
 //            new BottomNavigationView.OnNavigationItemSelectedListener() {
