@@ -27,6 +27,7 @@ public class search_recipe extends AppCompatActivity {
     private FirebaseDatabase database;
     private DatabaseReference ref;
     private List<String> lst;
+    private List<String> lst11;
     private List<Recipe> rec;
     private ListView listRecipe;
     private ArrayAdapter<String> adapter;
@@ -123,6 +124,7 @@ public class search_recipe extends AppCompatActivity {
 //        getDataFromDB(dishstr);
 //        setOnClickItem();
 //    }
+
 
 //    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
 //            new BottomNavigationView.OnNavigationItemSelectedListener() {
