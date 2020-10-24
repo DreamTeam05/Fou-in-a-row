@@ -75,6 +75,15 @@ public class search_recipe extends AppCompatActivity {
         ref = database.getReference("Рецепты");
     }
 
+    private void dothis() {
+        listRecipe = findViewById(R.id.rec);
+        lst = new ArrayList<>();
+        rec = new ArrayList<>();
+        adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, lst);
+        database = FirebaseDatabase.getInstance();
+        ref = database.getReference("Рецепты");
+    }
+
     private void getDataFromDB (final String str ){
         ValueEventListener vListener = new ValueEventListener() {
             @Override
