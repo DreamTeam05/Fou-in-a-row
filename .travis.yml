@@ -2,3 +2,5 @@ language: android
 dist: trusty
 install: true
 os: osx
+script:
+  - ./gradlew build check
