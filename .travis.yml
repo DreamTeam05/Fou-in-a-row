@@ -1,6 +1,6 @@
 language: android
 dist: trusty
-os: osx
+#os: osx
 before_install:
   - chmod +x gradlew
 script:
