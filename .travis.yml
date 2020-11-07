@@ -1,6 +1,9 @@
 language: android
 dist: trusty
-install: true
 os: osx
+before_install:
+  - chmod +x gradlew
+  - yes | sdkmanager "platforms;android-29"
 script:
-  - ./gradlew build check
+  - ./gradlew clean
+  - ./gradlew build
