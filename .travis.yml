@@ -1,6 +1,6 @@
 language: android
-dist: trusty
-os: osx
+#dist: trusty
+#os: osx
 before_install:
   - chmod +x gradlew
   - yes | sdkmanager "platforms;android-29"
